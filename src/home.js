@@ -10,11 +10,11 @@ function homeRender () {
 
     const mainText = document.createElement('div');
     mainText.className = 'mainText';
-    main.appendChild(mainText);
-
+    
     const mainSaidbar = document.createElement('div');
     mainSaidbar.className = ('mainSaidbar');
-    main.appendChild(mainSaidbar);
+
+    main.append(mainText, mainSaidbar);
 
 
     /* Filling the structure */
@@ -30,18 +30,17 @@ function homeRender () {
     /* Adress and contact */
     const adress = document.createElement('div');
     adress.className = 'adress';
-    mainSaidbar.appendChild(adress);
     adress.innerHTML = '<p><strong>Address:</strong> Malachitowa 5/3, 30-798 Kraków, Poland</p>';
 
     const email = document.createElement('div');
     email.className = 'email';
-    mainSaidbar.appendChild(email);
     email.innerHTML = '<p><strong>E-mail:</strong> ma4tys@interia.pl</p>';
 
     const mobile = document.createElement('div');
     mobile.className = 'mobile';
-    mainSaidbar.appendChild(mobile);
     mobile.innerHTML = '<p><strong>Mobile:</strong> (+48) 882 483 147</p>';
+
+    mainSaidbar.append(adress, email, mobile);
 
 
 }
