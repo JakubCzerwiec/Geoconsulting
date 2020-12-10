@@ -88,7 +88,9 @@ function servicesRender () {
 
 
     /* Saidbar */
-
+    let startingPoint = 2;
+    // mainSaidbar.innerHTML = 'Aloga'
+    mainSaidbar.innerHTML = `<img src="/src/img/${startingPoint}.jpg">`;
 
 
 }
