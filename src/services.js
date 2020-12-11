@@ -81,19 +81,26 @@ function servicesRender () {
 
     service3.append(service3header, service3list);
 
-
-
-
     text.append(service1, service2, service3);
 
-
+    addClassNameForLi ()
     /* Saidbar */
     let startingPoint = 2;
-    // mainSaidbar.innerHTML = 'Aloga'
+    
     mainSaidbar.innerHTML = `<img src="/src/img/${startingPoint}.jpg">`;
 
 
 }
+
+function addClassNameForLi () {
+    const listItemsAll = document.getElementsByTagName('li');
+
+        for (let i = 0; i < listItemsAll.length; i++) {
+            listItemsAll[i].classList.add('servicesListItems');
+        }
+}
+
+
 
 
 export {servicesRender}

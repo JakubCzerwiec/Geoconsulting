@@ -1,6 +1,9 @@
+/* Photo import */
 import Face from './img/face.jpg';
-const faceFoto = new Image();
-faceFoto.src = Face;
+const facePhoto = new Image();
+facePhoto.src = Face;
+
+
 /* Define render function */
 
 function aboutRender () {
@@ -32,11 +35,12 @@ function aboutRender () {
 
 
     /* Saidbar */
-    const profileFoto = faceFoto;
+    const profilePhoto = facePhoto;
 
     const publicationsList = document.createElement('div');
-    publicationsList.innerText = 'Publication list'
-    mainSaidbar.append(profileFoto, publicationsList);
+    publicationsList.className = 'publicationList';
+    publicationsList.innerText = 'Publication list';
+    mainSaidbar.append(profilePhoto, publicationsList);
 }
 
 export {aboutRender}
