@@ -1,3 +1,5 @@
+import {sliderRender} from './slider';
+
 
 /* Defining render function for Services page */
 function servicesRender () {
@@ -84,10 +86,10 @@ function servicesRender () {
     text.append(service1, service2, service3);
 
     addClassNameForLi ()
+
+
     /* Saidbar */
-    let startingPoint = 2;
-    
-    mainSaidbar.innerHTML = `<img src="/src/img/${startingPoint}.jpg">`;
+    sliderRender();
 
 
 }

@@ -8,8 +8,8 @@ import './style.css';
 
 
 
-// servicesRender ();
+servicesRender ();
 
-publicationsRender();
+// publicationsRender();
 
 navRender ();
