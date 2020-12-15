@@ -50,6 +50,9 @@ function navRender () {
     content.appendChild(coName);
     content.appendChild(nav);
     nav.appendChild(list);
+
+    const main = document.createElement('main');
+    content.appendChild(main);
 }
 
 

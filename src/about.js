@@ -1,3 +1,4 @@
+
 /* Photo import */
 import Face from './img/face.jpg';
 const facePhoto = new Image();
@@ -7,11 +8,13 @@ facePhoto.src = Face;
 /* Define render function */
 
 function aboutRender () {
+
     const content = document.getElementById('content');
 
 
     /* Set up structure */
-    const main = document.createElement('main');
+    const main = document.querySelector('main');
+    main.innerHTML = '';
     content.appendChild(main);
 
     const mainText = document.createElement('div');

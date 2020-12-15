@@ -6,7 +6,8 @@ function publicationsRender () {
 
 
     /* Set up structure */
-    const main = document.createElement('main');
+    const main = document.querySelector('main');
+    main.innerHTML = '';
     content.appendChild(main);
 
     const mainText = document.createElement('div');

@@ -24,25 +24,27 @@ photo6.src = photo_6;
 /* Insert images into an array */
 const photos = [photo1, photo2, photo3, photo4, photo5, photo6];
 
-/* Set first photo number */
+/* Set up first photo number */
 let startingPoint = 0;
 
 /* Define render function */
-function sliderRender () {
-
-    /* Setting time interval for photo change */
-    setInterval(() => {
-        startingPoint++;
-
-        if (startingPoint >= photos.length) startingPoint = 0;
+function sliderRender() {
+        /* Setting time interval for photo change */
+        setInterval(() => {
+            startingPoint++;
     
-        let mainSaidbar = document.querySelector('.mainSaidbar');
-        mainSaidbar.innerHTML = '';
-        mainSaidbar.appendChild(photos[startingPoint]);
-       
-
-    }, 1000);
-
+            if (startingPoint >= photos.length) startingPoint = 0;
+        
+            let mainSaidbar = document.querySelector('.mainSaidbar');
+            mainSaidbar.innerHTML = '';
+            mainSaidbar.appendChild(photos[startingPoint]);
+           
+    
+        }, 1000);
 }
+
+
+
+
 
 export {sliderRender}

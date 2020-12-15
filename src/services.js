@@ -1,10 +1,15 @@
 import {sliderRender} from './slider';
 
 
+
+
 /* Defining render function for Services page */
 function servicesRender () {
+    
+    const content = document.getElementById('content');
+
     /* Set up structure */
-    const main = document.createElement('main');
+    const main = document.querySelector('main');
     content.appendChild(main);
     main.innerHTML = '';
 
@@ -87,10 +92,8 @@ function servicesRender () {
 
     addClassNameForLi ()
 
-
     /* Saidbar */
     sliderRender();
-
 
 }
 
@@ -100,9 +103,6 @@ function addClassNameForLi () {
         for (let i = 0; i < listItemsAll.length; i++) {
             listItemsAll[i].classList.add('servicesListItems');
         }
-}
-
-
-
+} 
 
 export {servicesRender}

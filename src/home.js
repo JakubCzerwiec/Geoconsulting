@@ -1,11 +1,15 @@
 
+
+
 /* Defining render function for Main page */
 function homeRender () {
+
     const content = document.getElementById('content');
 
 
     /* Set up structure */
-    const main = document.createElement('main');
+    const main = document.querySelector('main');
+    main.innerHTML = '';
     content.appendChild(main);
 
     const mainText = document.createElement('div');
@@ -41,7 +45,7 @@ function homeRender () {
     mobile.innerHTML = '<p><strong>Mobile:</strong> (+48) 882 483 147</p>';
 
     mainSaidbar.append(adress, email, mobile);
-
+    
 
 }
 
