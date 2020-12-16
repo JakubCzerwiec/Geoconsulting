@@ -67,9 +67,9 @@ function publicationsRender () {
 
     addClassNameForPubsLi ();
 
-
-
 }
+
+
 
 function addClassNameForPubsLi () {
     const listItemsAll = document.getElementsByTagName('li');

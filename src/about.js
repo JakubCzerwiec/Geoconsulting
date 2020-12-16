@@ -3,6 +3,7 @@
 import Face from './img/face.jpg';
 const facePhoto = new Image();
 facePhoto.src = Face;
+import {publicationsRender} from './publications';
 
 
 /* Define render function */
@@ -44,6 +45,11 @@ function aboutRender () {
     publicationsList.className = 'publicationList';
     publicationsList.innerText = 'Publication list';
     mainSaidbar.append(profilePhoto, publicationsList);
+
+    const publicBtn = document.querySelector('.publicationList');
+    publicBtn.addEventListener('click', () => {
+        publicationsRender();
+    })
 }
 
 export {aboutRender}

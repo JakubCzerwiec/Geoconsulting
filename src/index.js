@@ -1,15 +1,15 @@
+/* Import render functions */
 import {navRender} from './nav';
 import {homeRender} from './home';
 import {servicesRender} from './services';
 import {aboutRender} from './about';
-import {publicationsRender} from './publications';
-import {sliderRender} from './slider';
 
+/* Import stylesheet */
 import './style.css';
 // import { LibManifestPlugin } from 'webpack';
 
 
-
+/* Initialazing homepage with Nav-bar */
 navRender ();
 
 homeRender ();
@@ -17,18 +17,14 @@ homeRender ();
 
 /* Event listeners */
 
-const main = document.querySelector('main');
 const homeBtn = document.querySelector('.nav-home');
 const servicesBtn = document.querySelector('.nav-services');
 const aboutBtn = document.querySelector('.nav-about');
 
 
-
 homeBtn.addEventListener('click', () => {
     homeRender();
-    clearInterval(sliderRender);
 });
-
 
 servicesBtn.addEventListener('click', () => {
     servicesRender ();
@@ -36,5 +32,5 @@ servicesBtn.addEventListener('click', () => {
 
 aboutBtn.addEventListener('click', () => {
     aboutRender ();
-    
-})
+});
+
