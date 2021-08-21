@@ -9,6 +9,7 @@ import './style.css';
 // import { LibManifestPlugin } from 'webpack';
 
 
+
 /* Initialazing homepage with Nav-bar */
 navRender ();
 
@@ -17,9 +18,9 @@ homeRender ();
 
 /* Event listeners */
 
-const homeBtn = document.querySelector('.nav-home');
-const servicesBtn = document.querySelector('.nav-services');
-const aboutBtn = document.querySelector('.nav-about');
+const homeBtn = document.querySelector('.home');
+const servicesBtn = document.querySelector('.services');
+const aboutBtn = document.querySelector('.about');
 
 
 homeBtn.addEventListener('click', () => {

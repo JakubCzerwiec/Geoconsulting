@@ -1,4 +1,73 @@
-body {
-    background-color: grey;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+:root {
+    --color-blk: #0D0D0D;
+    --color-wht: #FFFFFF;
+   
+}
+
+body {
+    background-color: grey;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hidden {
+    transform: translateY(-135%)
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+
+
+.nav {
+    cursor: pointer;
+    width: max-content;
+    width: max-content;
+    padding: 1em;
+    font-size: 2em;
+    margin: auto;
+    font-weight: bold;
+}
+
+.coName {
+    padding: 1em;
+    margin: auto;
+    font-size: 2em;
+}
+
+/* Burger (mobile only) */
+
+.burger {
+    width: 3em;
+    position: fixed;
+    right: 2em;
+    top: 2em;
+    z-index: 2;
+  } 
+
+.b-top {
+    background-color: var(--color-blk);
+    width: 3em;
+    height: 3px;
+    margin-bottom: .5em;
+}
+
+.b-bot {
+    background-color: var(--color-blk);
+    width: 1.5em;
+    height: 3px;
+    margin-left: auto;
+}
+
+.b-bot-click {
+    width: 3em;
+}
