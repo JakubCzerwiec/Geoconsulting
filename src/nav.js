@@ -6,7 +6,14 @@ function navRender () {
 
     /* Creating Navbar */
     const nav = document.createElement('nav');
-    nav.classList = 'hidden';
+    nav.classList = 'hidden navBar';
+
+    // Creating top bar
+
+    const topBar = document.createElement('div');
+    topBar.className = 'topBar';
+    content.appendChild(topBar);
+
 
     /* Creating burger */
     const burger = document.createElement('div');
@@ -15,7 +22,7 @@ function navRender () {
     const burgerTop = document.createElement('div');
     burgerTop.className = 'b-top';
     const burgerBot = document.createElement('div');
-    burgerBot.className = 'b-bot';
+    burgerBot.className = 'b-bot b-bot-click';
 
     burger.appendChild(burgerTop);
     burger.appendChild(burgerBot);
@@ -26,7 +33,7 @@ function navRender () {
     coName.textContent = 'MM Geoconsulting';
 
     /* Nav buttons */
-    const navigation = document.createElement('nav');
+    const navigation = document.createElement('div');
     navigation.className = 'menu';
 
     const li1 = document.createElement('div');
@@ -44,10 +51,15 @@ function navRender () {
     li3.textContent = 'About Me';
     navigation.appendChild(li3);
 
+    const li4 = document.createElement('div');
+    li4.className = 'nav pubList';
+    li4.textContent = 'Publication list';
+    navigation.appendChild(li4);
+
 
     /* Appending all to the content */
-    content.appendChild(burger);
-    content.appendChild(coName);
+    topBar.appendChild(coName);
+    topBar.appendChild(burger);
     content.appendChild(nav);
     nav.appendChild(navigation);
 

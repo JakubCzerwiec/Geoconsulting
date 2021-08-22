@@ -91,7 +91,7 @@ let photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, ph
 
 
 /* Set up first photo number */
-let startingPoint = 0;
+let startingPoint = 2;
 
 
 /* Define render function */
@@ -100,6 +100,7 @@ function sliderRender() {
     /* Render first picture */
     let mainSaidbar = document.querySelector('.mainSaidbar');
     mainSaidbar.innerHTML = '';
+    mainSaidbar.className = 'slider';
     mainSaidbar.appendChild(photos[0]);
 
         /* Setting time interval for photos change */

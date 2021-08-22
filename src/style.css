@@ -19,6 +19,18 @@ body {
     transform: translateY(-135%)
 }
 
+.topBar {
+    width: 100%;
+    height: max-content;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
 nav {
     display: flex;
     flex-direction: column;
@@ -26,6 +38,9 @@ nav {
     background-color: antiquewhite;
 }
 
+.navBar {
+    position: fixed;
+}
 
 
 .nav {
@@ -39,19 +54,15 @@ nav {
 }
 
 .coName {
-    padding: 1em;
-    margin: auto;
-    font-size: 2em;
+    font-size: 1.2em;
+    padding: .5em;
 }
 
 /* Burger (mobile only) */
 
 .burger {
-    width: 3em;
-    position: fixed;
-    right: 2em;
-    top: 2em;
-    z-index: 2;
+    width: max-content;
+    padding: 1em;
   } 
 
 .b-top {
@@ -70,4 +81,24 @@ nav {
 
 .b-bot-click {
     width: 3em;
+}
+
+.slider {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.slider img {
+    width: 24em;
+    height: 18em;
+    margin: auto;
+    padding: 1em;
+}
+
+.mainSaidbar img {
+    width: 24em;
+    height: 18em;
+    margin: auto;
+    padding: 1em;
 }
