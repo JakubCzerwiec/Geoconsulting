@@ -7,6 +7,7 @@ import {publicationsRender} from './publications';
 
 /* Import stylesheet */
 import './style.css';
+import { footerRender } from './footer';
 // import { LibManifestPlugin } from 'webpack';
 
 
@@ -15,6 +16,10 @@ import './style.css';
 navRender ();
 
 homeRender ();
+
+// footerRender ();
+
+
 
 
 /* Event listeners */

@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 22;
 }
 
 nav {
@@ -40,6 +40,10 @@ nav {
 
 .navBar {
     position: fixed;
+    background-color: aquamarine;
+    height: 100vh;
+    z-index: 2;
+    padding-top: 2em;
 }
 
 
@@ -63,6 +67,7 @@ nav {
 .burger {
     width: max-content;
     padding: 1em;
+    z-index: 5;
   } 
 
 .b-top {
@@ -84,21 +89,62 @@ nav {
 }
 
 .slider {
-    width: 100vw;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
 }
 
+/* USTAWIĆ OKRĄGŁE ZDJĘCIE I KONTENT NA ŚRODKU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .slider img {
-    width: 24em;
-    height: 18em;
+    width: 80%;
+    height: auto;
     margin: auto;
     padding: 1em;
+    border-radius: 50%;
 }
 
+main {
+    margin-top: 2em;
+}
+
+.mainSaidbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .mainSaidbar img {
-    width: 24em;
-    height: 18em;
-    margin: auto;
+    width: 80%;
+    height: auto;
     padding: 1em;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* Footer */
+/* USTAWIĆ PRZYKLEJENIE DO SPODU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+footer {
+    background-color: beige;
+    padding: 1em;
+    margin-top: auto;
+}
+
+/* Services */
+
+.service1 {
+    background-color: aqua;
+}
+
+.service2 {
+    background-color: aquamarine;
+}
+
+.service3 {
+    background-color: aqua;
+}
+
+.service1, .service2, .service3 {
+    padding: 1em;
+    text-align: center;
 }

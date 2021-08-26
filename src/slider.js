@@ -113,7 +113,7 @@ function sliderRender() {
             mainSaidbar.innerHTML = '';
             mainSaidbar.appendChild(photos[startingPoint]);
            
-        }, 1000);
+        }, 10000);
 }
 
 

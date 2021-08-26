@@ -27,12 +27,14 @@ function servicesRender () {
     header.innerText = 'Services';
 
     const text = document.createElement('div');
+    text.className = 'servicesDiv';
 
     mainText.append(header, text);
 
 
     /* Service 1 */
     const service1 = document.createElement('div');
+    service1.className = 'service1';
 
     const service1header = document.createElement('h5');
     service1header.innerText = 'Sedimentology:';
@@ -53,6 +55,7 @@ function servicesRender () {
 
     /* Service 2 */
     const service2 = document.createElement('div');
+    service2.className = ('service2');
 
     const service2header = document.createElement('h5');
     service2header.innerText = 'Diagenesis:';
@@ -72,6 +75,7 @@ function servicesRender () {
 
     /* Service 3 */
     const service3 = document.createElement('div');
+    service3.className = ('service3')
 
     const service3header = document.createElement('h5');
     service3header.innerText = 'Reservoir properties:';
@@ -92,7 +96,7 @@ function servicesRender () {
 
     addClassNameForLi ()
 
-    /* Saidbar */
+    /* Slider */
     sliderRender();
 
 }
