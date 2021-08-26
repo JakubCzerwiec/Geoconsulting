@@ -2,11 +2,13 @@
 
     // Creating footer
 
-function footerRender () {
+let footerRender = () => {
     const content = document.getElementById('content');
 
     const footer = document.createElement('footer');
     content.appendChild(footer);
+
+    footer.innerHTML = '';
 
 
     const adress = document.createElement('div');

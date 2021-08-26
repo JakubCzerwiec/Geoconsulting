@@ -17,7 +17,7 @@ navRender ();
 
 homeRender ();
 
-// footerRender ();
+footerRender ();
 
 
 

@@ -1,10 +1,10 @@
 import {sliderRender} from './slider';
-
+import { footerRender } from './footer';
 
 
 
 /* Defining render function for Services page */
-function servicesRender () {
+let servicesRender = () => {
     
     const content = document.getElementById('content');
 
@@ -98,6 +98,7 @@ function servicesRender () {
 
     /* Slider */
     sliderRender();
+
 
 }
 

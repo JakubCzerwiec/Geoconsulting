@@ -1,8 +1,8 @@
-
+import { footerRender } from './footer';
 
 
 /* Defining render function for Main page */
-function homeRender () {
+let homeRender = () => {
 
     const content = document.getElementById('content');
 
@@ -46,7 +46,7 @@ function homeRender () {
 
     mainSaidbar.append(adress, email, mobile);
     
-
+    // footerRender();
 }
 
 /* Export render function */

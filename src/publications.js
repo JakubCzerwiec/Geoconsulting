@@ -1,7 +1,9 @@
+import { footerRender } from './footer';
+
 
 /* Define render function */
 
-function publicationsRender () {
+let publicationsRender = () => {
     const content = document.getElementById('content');
 
 
@@ -17,7 +19,7 @@ function publicationsRender () {
 
     /* Filling the structure */
     /* Header */
-    const header = document.createElement('h3');
+    const header = document.createElement('h1');
     header.innerText = 'Publication list';
 
     /* List */
@@ -67,11 +69,12 @@ function publicationsRender () {
 
     addClassNameForPubsLi ();
 
+
 }
 
 
 
-function addClassNameForPubsLi () {
+let addClassNameForPubsLi = () => {
     const listItemsAll = document.getElementsByTagName('li');
 
         for (let i = 0; i < listItemsAll.length; i++) {

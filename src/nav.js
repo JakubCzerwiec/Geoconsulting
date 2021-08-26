@@ -1,6 +1,6 @@
 /* Defining render function for nav-bar */
 
-function navRender () {
+let navRender = () => {
     const content = document.getElementById('content');
     
 
