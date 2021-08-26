@@ -90,31 +90,105 @@ photo27.src = photo_27;
 let photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27];
 
 
+
+
 /* Set up first photo number */
-let startingPoint = 2;
+let counter = 0;
 
 
 /* Define render function */
 function sliderRender() {
 
-    /* Render first picture */
     let mainSaidbar = document.querySelector('.mainSaidbar');
-    mainSaidbar.innerHTML = '';
-    mainSaidbar.className = 'slider';
-    mainSaidbar.appendChild(photos[0]);
+    let slider = document.createElement('div');
+    const backBtn = document.createElement('div');
+    const forBtn = document.createElement('div');
+    let circles = document.createElement('div');
 
-        /* Setting time interval for photos change */
+    let render = () => {
+        // Define DOM elements
+            // Slider 
+            
+            slider.className = 'slider';
+            slider.innerHTML = '';
+            circles.innerHTML = '';
+            slider.appendChild(photos[counter]);
+            
 
-        setInterval(() => {
-            startingPoint++;
-    
-            if (startingPoint >= photos.length) startingPoint = 0;
-        
-            mainSaidbar.innerHTML = '';
-            mainSaidbar.appendChild(photos[startingPoint]);
-           
-        }, 10000);
+            // Back and For buttons
+            
+            backBtn.className = 'backBtn';
+            backBtn.innerText = '<';
+
+            forBtn.className = 'froBtn';
+            forBtn.innerText = '>';
+
+            // Navigation circles
+            
+            circles.className = 'circles';
+            circles.innerHTML = '';
+
+            // Creating circles
+            for (let i = 0; i < photos.length; i++) {
+                let circle = document.createElement('div');
+                circle.className = 'circle';
+                circles.appendChild(circle);
+            }
+
+
+
+            // Event listeners for nav circles
+                let navCircles = document.querySelectorAll('.circle');
+                navCircles.forEach((element, index) => {
+                    element.addEventListener('click', () => {
+                        counter = index;
+                        render ();
+                    })
+                });
+
+            // Changing class for active circle
+            circles.childNodes[counter].className = 'circAct';
+
+    }
+
+        render ();
+
+            mainSaidbar.append(slider, backBtn, forBtn, circles);
+
+
+
+
+                        // Event listeners for Back nad For Btns
+                        backBtn.addEventListener('click', () => {
+                            counter--;
+                            if (counter < 0) counter = photos.length - 1;
+                            render();
+                        })
+            
+                        forBtn.addEventListener('click', () => {
+                            counter++;
+                            if (counter > photos.length -1) counter = 0;
+                            render();
+                        })
+            
+                        
+
+
+
+        // Setting time interval for photos change
+
+        const nextSliderTimer = () => {
+            counter++;
+            if (counter >= photos.length) counter = 0;
+            render();
+        }
+
+        const interval = setInterval(nextSliderTimer, 2000)
 }
+
+
+
+
 
 
 export {sliderRender}

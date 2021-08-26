@@ -24,4 +24,4 @@ function footerRender () {
     footer.append(adress, email, mobile)
 }
 
-export {footerRender};
+export { footerRender };

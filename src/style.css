@@ -148,3 +148,20 @@ footer {
     padding: 1em;
     text-align: center;
 }
+
+
+
+/* Slider */
+.circle {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.circAct {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background-color: green;
+}
