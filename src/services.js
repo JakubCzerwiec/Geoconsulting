@@ -99,6 +99,8 @@ let servicesRender = () => {
     /* Slider */
     sliderRender();
 
+    footerRender();
+
 
 }
 

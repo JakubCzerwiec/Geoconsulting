@@ -99,6 +99,7 @@ let counter = 0;
 /* Define render function */
 function sliderRender() {
 
+    
     let mainSaidbar = document.querySelector('.mainSaidbar');
     let slider = document.createElement('div');
     const backBtn = document.createElement('div');
@@ -108,6 +109,8 @@ function sliderRender() {
     let render = () => {
         // Define DOM elements
             // Slider 
+            
+            
             
             slider.className = 'slider';
             slider.innerHTML = '';
@@ -148,7 +151,7 @@ function sliderRender() {
 
             // Changing class for active circle
             circles.childNodes[counter].className = 'circAct';
-
+            
     }
 
         render ();

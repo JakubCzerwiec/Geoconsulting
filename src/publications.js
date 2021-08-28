@@ -69,6 +69,7 @@ let publicationsRender = () => {
 
     addClassNameForPubsLi ();
 
+    footerRender();
 
 }
 

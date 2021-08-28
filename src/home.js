@@ -46,7 +46,7 @@ let homeRender = () => {
 
     mainSaidbar.append(adress, email, mobile);
     
-    // footerRender();
+    footerRender();
 }
 
 /* Export render function */

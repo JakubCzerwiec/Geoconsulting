@@ -3,10 +3,11 @@
     // Creating footer
 
 let footerRender = () => {
-    const content = document.getElementById('content');
-
+    // const content = document.getElementById('content');
+    
+    const main = document.querySelector('main');
     const footer = document.createElement('footer');
-    content.appendChild(footer);
+    main.appendChild(footer);
 
     footer.innerHTML = '';
 
