@@ -4,6 +4,8 @@ import { footerRender } from './footer';
 /* Define render function */
 
 let publicationsRender = () => {
+    window.scroll(0, 0)
+    
     const content = document.getElementById('content');
 
 

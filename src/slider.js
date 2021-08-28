@@ -93,13 +93,14 @@ let photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, ph
 
 
 /* Set up first photo number */
-let counter = 0;
+
 
 
 /* Define render function */
 function sliderRender() {
 
-    
+    window.scroll(0, 0)
+    let counter = 0;
     let mainSaidbar = document.querySelector('.mainSaidbar');
     let slider = document.createElement('div');
     const backBtn = document.createElement('div');
@@ -151,12 +152,15 @@ function sliderRender() {
 
             // Changing class for active circle
             circles.childNodes[counter].className = 'circAct';
+
+            mainSaidbar.append(slider, backBtn, forBtn, circles);
             
     }
 
-        render ();
+    // Call function to render slider
+    render ();
 
-            mainSaidbar.append(slider, backBtn, forBtn, circles);
+            
 
 
 

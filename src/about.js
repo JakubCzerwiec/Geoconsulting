@@ -1,5 +1,6 @@
 
 /* Photo import */
+import { footerRender } from './footer';
 import Face from './img/face.jpg';
 const facePhoto = new Image();
 facePhoto.src = Face;
@@ -9,6 +10,8 @@ import {publicationsRender} from './publications';
 /* Define render function */
 
 function aboutRender () {
+
+    window.scroll(0, 0)
 
     const content = document.getElementById('content');
 
@@ -51,6 +54,8 @@ function aboutRender () {
     publicBtn.addEventListener('click', () => {
         publicationsRender();
     })
+
+    footerRender();
 }
 
 export {aboutRender}
