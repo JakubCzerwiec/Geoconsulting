@@ -2,7 +2,7 @@
 import { renderStructure } from './structure'
 
 let navRender = () => {
-    const navigation = document.querySelector('navigation');
+    const navig = document.querySelector('navig');
     
 
 
@@ -53,7 +53,7 @@ let navRender = () => {
 
 
 
-    navigation.append(coName, burger, menu);
+    navig.append(coName, menu, burger);
 
 }
 

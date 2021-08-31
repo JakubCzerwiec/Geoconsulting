@@ -5,13 +5,13 @@ import {homeRender} from './home';
 import {servicesRender} from './services';
 import {aboutRender} from './about';
 import {publicationsRender} from './publications';
-import { photos } from './photosImport';
+import { photosI } from './photosImport';
 
 /* Import stylesheet */
 import './style.css';
 
 // import { LibManifestPlugin } from 'webpack';
-window['photos'] = photos;
+window['photosI'] = photosI;
 
 
 /* Initialazing homepage with Nav-bar */

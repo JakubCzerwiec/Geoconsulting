@@ -12,13 +12,13 @@ let renderStructure = () => {
 
     const content = document.getElementById('content');
 
-        const navigation = document.createElement('navigation')
+        const navig = document.createElement('navig')
            
         const main = document.createElement('main')
 
         const footer = document.createElement('footer')
 
-    content.append(navigation, main, footer);
+    content.append(navig, main, footer);
 
     navRender()
 

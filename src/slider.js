@@ -12,6 +12,8 @@ function sliderRender() {
 
     let sliderBox = document.createElement('div');
     sliderBox.className = 'sliderBox';
+    let displayer = document.createElement('div');
+    displayer.className = 'displayer';
     let slider = document.createElement('div');
     const backBtn = document.createElement('div');
     const forBtn = document.createElement('div');
@@ -34,10 +36,10 @@ function sliderRender() {
 
             // Back and For buttons
             
-            backBtn.className = 'backBtn';
+            backBtn.className = 'back btn';
             backBtn.innerText = '<';
 
-            forBtn.className = 'froBtn';
+            forBtn.className = 'fro btn';
             forBtn.innerText = '>';
 
             // Navigation circles
@@ -69,8 +71,8 @@ function sliderRender() {
     }
 
         render ();
-
-            sliderBox.append(slider, backBtn, forBtn, circles);
+            displayer.append(backBtn, slider, forBtn)
+            sliderBox.append(displayer, circles);
 
 
 

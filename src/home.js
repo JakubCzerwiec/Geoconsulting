@@ -7,7 +7,8 @@ import { sliderRender } from './slider';
 let homeRender = () => {
 
    
-
+    window.scroll(0, 0)
+   
 
     /* Set up structure */
     const main = document.querySelector('main');
@@ -21,9 +22,11 @@ let homeRender = () => {
 
     main.appendChild(header);
 
-    
-    // photos.splice(0, 10)
-    sliderRender()
+    // Slider
+        
+        photos = photosI.slice(0, 10)
+        sliderRender();
+
 
     const text = document.createElement('p');
     text.className = 'homeText';

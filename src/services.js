@@ -7,7 +7,9 @@ import { photos } from './photosImport';
 /* Defining render function for Services page */
 let servicesRender = () => {
     
-    
+    window.scroll(0, 0)
+
+   
 
     /* Set up structure */
     const main = document.querySelector('main');
@@ -98,9 +100,10 @@ let servicesRender = () => {
 
     /* Slider */
 
-    
-    // photos.splice(10, 20);
+
+    photos = photosI.slice(10, 20)
     sliderRender();
+
 
     // Footer
     footerRender();

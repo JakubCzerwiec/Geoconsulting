@@ -19,16 +19,24 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+#content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 
 /* Menu (mobile only) */
 
 .hidden {
-    transform: translateY(-135%)
+    /* transform: translateY(-135%); */
+    display: none;
 }
 
-.topBar {
+navig {
     width: 100%;
-    height: max-content;
+    height: min-content;
     padding: .5em;
     background-color: var(--color-theme1);
     display: flex;
@@ -45,6 +53,8 @@ nav {
     width: 100%;
     background-color: antiquewhite;
 }
+
+
 
 .navBar {
     position: fixed;
@@ -99,6 +109,18 @@ nav {
 
 
 /* Slider */
+
+.sliderBox {
+    width: 100%;
+}
+
+.displayer {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
 .slider {
     width: 100%;
     height: auto;
@@ -119,6 +141,12 @@ nav {
     margin: auto;
     padding: 1em;
     border-radius: 50%;
+}
+
+.btn {
+    height: inherit;
+    font-size: 2em;
+    
 }
 
 .circles {
@@ -169,12 +197,11 @@ h1 {
 }
 
 /* Footer */
-/* USTAWIĆ PRZYKLEJENIE DO SPODU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
 footer {
     background-color: beige;
     padding: 1em;
-    margin-top: auto;
-    
+    margin-top: 3em;
 }
 
 /* Services */
