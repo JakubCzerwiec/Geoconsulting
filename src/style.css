@@ -146,7 +146,7 @@ main {
     padding-top: 3.9em;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: max-content;
 }
 
 h1 {
@@ -160,7 +160,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
 }
-.mainSaidbar img {
+.profilePhoto img {
     width: 80%;
     height: auto;
     padding: 1em;

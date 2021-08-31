@@ -5,9 +5,8 @@
 let footerRender = () => {
     // const content = document.getElementById('content');
     
-    const main = document.querySelector('main');
-    const footer = document.createElement('footer');
-    main.appendChild(footer);
+    const footer = document.querySelector('footer');
+
 
     footer.innerHTML = '';
 

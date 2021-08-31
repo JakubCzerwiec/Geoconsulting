@@ -6,13 +6,11 @@ import { footerRender } from './footer';
 let publicationsRender = () => {
     window.scroll(0, 0)
     
-    const content = document.getElementById('content');
-
 
     /* Set up structure */
     const main = document.querySelector('main');
     main.innerHTML = '';
-    content.appendChild(main);
+
 
     const mainText = document.createElement('div');
     mainText.className = 'mainText';
