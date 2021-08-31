@@ -1,4 +1,5 @@
 /* Import render functions */
+import { renderStructure  } from './structure';
 import {navRender} from './nav';
 import {homeRender} from './home';
 import {servicesRender} from './services';
@@ -14,9 +15,11 @@ window['photos'] = photos;
 
 
 /* Initialazing homepage with Nav-bar */
-navRender ();
+renderStructure ();
 
-homeRender ();
+// navRender ();
+
+// homeRender ();
 
 
 
@@ -29,37 +32,37 @@ const homeBtn = document.querySelector('.home');
 const servicesBtn = document.querySelector('.services');
 const aboutBtn = document.querySelector('.about');
 const burger = document.querySelector('.burger');
-const nav = document.querySelector('nav');
+const menu = document.querySelector('.menu');
 const bBot = document.querySelector('.b-bot');
 const pubList = document.querySelector('.pubList');
 
 burger.addEventListener('click', () => {
-    nav.classList.toggle('hidden')
+    menu.classList.toggle('hidden')
     bBot.classList.toggle('b-bot-click')
 } )
 
 
 homeBtn.addEventListener('click', () => {
     bBot.classList.toggle('b-bot-click')
-    nav.classList.toggle('hidden')
+    menu.classList.toggle('hidden')
     homeRender();
 });
 
 servicesBtn.addEventListener('click', () => {
     bBot.classList.toggle('b-bot-click')
-    nav.classList.toggle('hidden')
+    menu.classList.toggle('hidden')
     servicesRender ();
 });
 
 aboutBtn.addEventListener('click', () => {
     bBot.classList.toggle('b-bot-click')
-    nav.classList.toggle('hidden')
+    menu.classList.toggle('hidden')
     aboutRender ();
 });
 
 pubList.addEventListener('click', () => {
     bBot.classList.toggle('b-bot-click')
-    nav.classList.toggle('hidden')
+    menu.classList.toggle('hidden')
     publicationsRender();
 })
 

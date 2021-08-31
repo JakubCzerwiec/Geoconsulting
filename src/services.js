@@ -7,20 +7,19 @@ import { photos } from './photosImport';
 /* Defining render function for Services page */
 let servicesRender = () => {
     
-    const content = document.getElementById('content');
+    
 
     /* Set up structure */
     const main = document.querySelector('main');
-    content.appendChild(main);
+    
     main.innerHTML = '';
 
     const mainText = document.createElement('div');
     mainText.className = 'mainText';
    
 
-    const mainSaidbar = document.createElement('div');
-    mainSaidbar.className = 'mainSaidbar';
-    main.append(mainText, mainSaidbar);
+    
+    main.append(mainText);
 
     /* Filling the structure */
     /* Text */
@@ -99,6 +98,7 @@ let servicesRender = () => {
 
     /* Slider */
 
+    
     // photos.splice(10, 20);
     sliderRender();
 
