@@ -4,12 +4,13 @@ import {homeRender} from './home';
 import {servicesRender} from './services';
 import {aboutRender} from './about';
 import {publicationsRender} from './publications';
+import { photos } from './photosImport';
 
 /* Import stylesheet */
 import './style.css';
-import { footerRender } from './footer';
-// import { LibManifestPlugin } from 'webpack';
 
+// import { LibManifestPlugin } from 'webpack';
+window['photos'] = photos;
 
 
 /* Initialazing homepage with Nav-bar */
@@ -17,7 +18,7 @@ navRender ();
 
 homeRender ();
 
-// footerRender ();
+
 
 
 

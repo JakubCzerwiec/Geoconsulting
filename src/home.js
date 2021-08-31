@@ -1,4 +1,5 @@
 import { footerRender } from './footer';
+import { sliderRender } from './slider';
 
 
 /* Defining render function for Main page */
@@ -45,8 +46,15 @@ let homeRender = () => {
     mobile.innerHTML = '<p><strong>Mobile:</strong> (+48) 882 483 147</p>';
 
     mainSaidbar.append(adress, email, mobile);
+
+
+
+    // photos.splice(0, 13)
+    // sliderRender();
     
     footerRender();
+
+
 }
 
 /* Export render function */

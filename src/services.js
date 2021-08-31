@@ -1,5 +1,6 @@
 import {sliderRender} from './slider';
 import { footerRender } from './footer';
+import { photos } from './photosImport';
 
 
 
@@ -97,8 +98,11 @@ let servicesRender = () => {
     addClassNameForLi ()
 
     /* Slider */
+
+    // photos.splice(10, 20);
     sliderRender();
 
+    // Footer
     footerRender();
 
 

@@ -1,5 +1,5 @@
-
-/* Photos import */
+import { photos } from './photosImport';
+/* Photos import 
 import photo_1 from './img/1.jpg';
 import photo_2 from './img/2.jpg';
 import photo_3 from './img/3.jpg';
@@ -86,21 +86,19 @@ photo27.src = photo_27;
 
 
 
-/* Insert images into an array */
-let photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27];
-
+// Insert images into an array 
+let photos = [photo1, photo2, photo3, photo4, photo5, photo6, photo7, photo8, photo9, photo10, photo11, photo12, photo13, photo14, photo15, photo16, photo17, photo18, photo19, photo20, photo21, photo22, photo23, photo24, photo25, photo26, photo27]; 
+*/
 
 
 
 /* Set up first photo number */
-
-
+let counter = 0;
+// photos();
 
 /* Define render function */
 function sliderRender() {
 
-    window.scroll(0, 0)
-    let counter = 0;
     let mainSaidbar = document.querySelector('.mainSaidbar');
     let slider = document.createElement('div');
     const backBtn = document.createElement('div');
@@ -110,8 +108,6 @@ function sliderRender() {
     let render = () => {
         // Define DOM elements
             // Slider 
-            
-            
             
             slider.className = 'slider';
             slider.innerHTML = '';
@@ -153,14 +149,11 @@ function sliderRender() {
             // Changing class for active circle
             circles.childNodes[counter].className = 'circAct';
 
-            mainSaidbar.append(slider, backBtn, forBtn, circles);
-            
     }
 
-    // Call function to render slider
-    render ();
+        render ();
 
-            
+            mainSaidbar.append(slider, backBtn, forBtn, circles);
 
 
 
