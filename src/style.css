@@ -31,7 +31,7 @@ body {
 
 .hidden {
     /* transform: translateY(-135%); */
-    display: none;
+    transform: translateY(-100%)
 }
 
 .menu {
@@ -41,6 +41,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: var(--color-theme1);
+    transition: transform 200ms cubic-bezier(.5, 0, .5, 1);
 }
 
 navig {
@@ -143,7 +144,7 @@ nav {
 .btn {
     height: inherit;
     font-size: 2em;
-    
+    cursor: pointer;
 }
 
 .circles {
@@ -151,6 +152,7 @@ nav {
     flex-direction: row;
     width: max-content;
     margin: auto;
+    cursor: pointer;
 }
 
 .circle {

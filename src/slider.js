@@ -32,6 +32,7 @@ function sliderRender() {
             slider.innerHTML = '';
             circles.innerHTML = '';
             slider.appendChild(photos[counter]);
+            slider.animate([{opacity:'.4'},{opacity:'1'}],{duration:1000, easing: 'cubic-bezier(0.42, 0, 0.58, 1)'});
             
 
             // Back and For buttons
