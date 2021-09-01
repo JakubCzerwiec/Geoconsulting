@@ -40,12 +40,13 @@ function aboutRender () {
 
 
     // Profile photo
+    
     const profilePhoto = facePhoto;
     profilePhoto.className = 'profilePhoto';
 
     const publicationsList = document.createElement('div');
     publicationsList.className = 'publicationList';
-    publicationsList.innerText = 'Publication list';
+    publicationsList.innerText = 'Publications list';
     main.append(profilePhoto, publicationsList);
 
     const publicBtn = document.querySelector('.publicationList');

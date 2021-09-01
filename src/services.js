@@ -38,7 +38,7 @@ let servicesRender = () => {
     const service1 = document.createElement('div');
     service1.className = 'service1';
 
-    const service1header = document.createElement('h5');
+    const service1header = document.createElement('h3');
     service1header.innerText = 'Sedimentology:';
 
     const service1list = document.createElement('ul');
@@ -59,7 +59,7 @@ let servicesRender = () => {
     const service2 = document.createElement('div');
     service2.className = ('service2');
 
-    const service2header = document.createElement('h5');
+    const service2header = document.createElement('h3');
     service2header.innerText = 'Diagenesis:';
 
     const service2list = document.createElement('ul');
@@ -79,7 +79,7 @@ let servicesRender = () => {
     const service3 = document.createElement('div');
     service3.className = ('service3')
 
-    const service3header = document.createElement('h5');
+    const service3header = document.createElement('h3');
     service3header.innerText = 'Reservoir properties:';
 
     const service3list = document.createElement('ul');
