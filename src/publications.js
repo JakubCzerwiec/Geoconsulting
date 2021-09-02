@@ -12,10 +12,10 @@ let publicationsRender = () => {
     main.innerHTML = '';
 
 
-    const mainText = document.createElement('div');
-    mainText.className = 'mainText';
+    const pubText = document.createElement('div');
+    pubText.className = 'pubText';
 
-    main.appendChild(mainText);
+   
 
     /* Filling the structure */
     /* Header */
@@ -64,8 +64,8 @@ let publicationsRender = () => {
     
 
     publicationsList.append(pub1, pub2, pub3, pub4, pub5, pub6, pub7, pub8, pub9, pub10, pub11, pub12);
-
-    mainText.append(header, publicationsList);
+    main.append(header, pubText);
+    pubText.append(publicationsList);
 
     addClassNameForPubsLi ();
 

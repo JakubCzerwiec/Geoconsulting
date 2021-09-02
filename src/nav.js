@@ -1,16 +1,25 @@
 /* Defining render function for nav-bar */
 import { renderStructure } from './structure'
 
+import coLogo from './img/logo.png';
+
+const logo = new Image();
+logo.src = coLogo;
+
 let navRender = () => {
     const navig = document.querySelector('navig');
-    
+
 
 
 
     // Co-name
     const coName = document.createElement('div');
     coName.className = 'coName';
-    coName.textContent = 'MM Geoconsulting';
+    coName.innerHTML = `<p>Michał Matysik<br>Geoconsulting</p></div>`;
+    coName.append(logo);
+
+
+    
 
                                 // Nav buttons and menu div
                                 const menu = document.createElement('div');
