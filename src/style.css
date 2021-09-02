@@ -130,6 +130,26 @@ nav {
     padding: 2em;
 }
 
+.slider img {
+    animation: slide 8000ms;
+
+}
+
+@keyframes slide {
+    0% {
+        opacity: .2;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
+    }
+  }
+
 /* USTAWIĆ OKRĄGŁE ZDJĘCIE I KONTENT NA ŚRODKU!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 
