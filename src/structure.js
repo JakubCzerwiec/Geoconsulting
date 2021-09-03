@@ -1,10 +1,6 @@
 // Set up base structure of the page
 import {navRender} from './nav';
 import {homeRender} from './home';
-import {servicesRender} from './services';
-import {aboutRender} from './about';
-import {publicationsRender} from './publications';
-import { photos } from './photosImport';
 import { footerRender } from './footer';
 
 

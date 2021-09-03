@@ -1,5 +1,5 @@
 /* Defining render function for nav-bar */
-import { renderStructure } from './structure'
+// import { renderStructure } from './structure'
 
 import coLogo from './img/logo.png';
 

@@ -21,7 +21,7 @@ let servicesRender = () => {
    
 
     
-    main.append(mainText);
+    
 
     /* Filling the structure */
     /* Text */
@@ -31,7 +31,7 @@ let servicesRender = () => {
     const text = document.createElement('div');
     text.className = 'servicesDiv';
 
-    mainText.append(header, text);
+    mainText.append(text);
 
 
     /* Service 1 */
@@ -95,6 +95,8 @@ let servicesRender = () => {
     service3.append(service3header, service3list);
 
     text.append(service1, service2, service3);
+
+    main.append(header, mainText);
 
     addClassNameForLi ()
 

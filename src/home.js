@@ -1,4 +1,4 @@
-import { footerRender } from './footer';
+
 import { photos } from './photosImport';
 import { sliderRender } from './slider';
 

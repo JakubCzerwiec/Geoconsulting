@@ -1,6 +1,5 @@
 /* Import render functions */
 import { renderStructure  } from './structure';
-import {navRender} from './nav';
 import {homeRender} from './home';
 import {servicesRender} from './services';
 import {aboutRender} from './about';
@@ -17,9 +16,6 @@ window['photosI'] = photosI;
 /* Initialazing homepage with Nav-bar */
 renderStructure ();
 
-// navRender ();
-
-// homeRender ();
 
 
 
@@ -65,4 +61,3 @@ pubList.addEventListener('click', () => {
     menu.classList.toggle('hidden')
     publicationsRender();
 })
-
