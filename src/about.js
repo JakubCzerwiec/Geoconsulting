@@ -28,7 +28,7 @@ function aboutRender () {
 
     /* Filling the structure */
         /* Text */
-            const header = document.createElement('h1');
+            const header = document.createElement('h2');
             header.innerText = 'About me';
             
 
@@ -37,10 +37,21 @@ function aboutRender () {
             text.innerHTML = 'My name is Michał Matysik. I have a 13-year experience in Paleozoic and Mesozoic tropical- and cool-water carbonates, evaporites, mixed carbonate-siliciclastic systems, and siliceous deposits, gained during my Ph.D. research, four postdoc projects, and current geoconsulting and academic works focused on the Barents Sea, continental Europe, and the Middle East. Not only these different projects gave me an opportunity to work with a broad range of depositional facies and environments (sabkhas, tidal flats, lagoons, high-energy shoals, warm- to cool-water reefs, open-platform storm-dominated settings), diagenetic processes (dissolution, karstification, silicification, various dolomitization models), reservoir geometries (simple layer-cake successions to highly heterogeneous reservoirs hosted in tectonically tilted strata), and economic accumulations (hydrocarbons, MVT mineralization). They also developed my proficiency in planning and using proper methods to solve specific sedimentological problems. Part of the results has been published in high-impact peer-reviewed journals (see publication list on the right). <p>By visiting areas of modern sedimentation along the Red Sea, Persian (Arabian) Gulf, Oman Gulf, and Jutland Peninsula, I have supplemented my theoretical knowledge about coastal carbonate-evaporitic and siliciclastic settings.</p>';
             
             mainText.append(text);
-            main.append(header, mainText);
 
-    // Profile photo
+            const aboutBox = document.createElement('div');
+            aboutBox.className = 'aboutBox';
+
+            
+
+
     
+
+    
+    // Sidebar
+    const sideBar = document.createElement('div');
+    sideBar.className = 'sideBar';
+
+            // Profile photo
     const profilePhoto = facePhoto;
     profilePhoto.className = 'profilePhoto';
 
@@ -48,12 +59,15 @@ function aboutRender () {
     publicationsList.className = 'publicationList';
     publicationsList.innerText = 'Publications list';
     
-    const sideBar = document.createElement('div');
-    sideBar.className = 'sideBar';
     sideBar.append(profilePhoto, publicationsList)
-    main.append(sideBar);
+
+    aboutBox.append(mainText, sideBar);
+
+    main.append(header, aboutBox);
     
 
+
+    // Publication list button
     const publicBtn = document.querySelector('.publicationList');
     publicBtn.addEventListener('click', () => {
         publicationsRender();

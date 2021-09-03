@@ -17,7 +17,7 @@ let homeRender = () => {
 
     /* Filling the structure */
     /* Text */
-    const header = document.createElement('h1');
+    const header = document.createElement('h2');
     header.innerText = 'Company profile';
 
     main.appendChild(header);

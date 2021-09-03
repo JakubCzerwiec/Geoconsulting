@@ -84,6 +84,7 @@ nav {
     flex-direction: row-reverse;
     align-items: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .coName img {
@@ -212,7 +213,7 @@ main {
     height: max-content;
 }
 
-h1 {
+h2 {
     background-color: var(--color-theme2);
     padding: .5em;
     height: 100%;
@@ -284,12 +285,7 @@ footer {
     text-indent: 10%;
 }
 
-.profilePhoto {
-    width: 80%;
-    height: auto;
-    padding: 1em;
-    margin: auto;
-}
+
 
 .sideBar {
     width: 80%;
@@ -297,11 +293,23 @@ footer {
     margin: auto;
 }
 
+.profilePhoto {
+    width: 50%;
+    height: auto;
+    padding: 1em;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
 .publicationList {
     cursor: pointer;
     padding: 1em;
-    width: 80%;
+    text-align: center;
+    background-color: var(--color-theme1);
+    border-radius: 10px;
     margin: auto;
+    width: 60%;
+    font-weight: bold;
 }
 
 /* Home page */
@@ -316,16 +324,41 @@ footer {
 
 @media screen and (min-width: 600px) {
 
-    main {
+    /* Navigation */
+
+    .burger {
+        display: none;
+    }
+
+    .hidden {
+        transform: translateY(0);
+    }
+
+    .menu {
+        display: flex;
         flex-direction: row;
+        width: max-content;
+        height: 100%;
+        position: static;
+    }
+
+    .nav {
+        width: max-content;
+        height: max-content;
+        border-bottom: none;
+        font-size: 1.5em;
+    }
+
+    main {
+        flex-direction: column;
         height: 100%;
         flex-grow: 2;
         align-items: center;
 
     }
 
-    h1 {
-        width: max-content;
+    h2 {
+        width: 100%;
 
     }
 
@@ -342,7 +375,7 @@ footer {
     }
 
     .slider img {
-        width: 40vw;
+        width: auto;
         height: 35vh;
         border-radius: 0;
         object-fit: fill;
@@ -357,6 +390,13 @@ footer {
     .servicesDiv li {
         list-style: disc;
         padding: 0.3em;
+        width: 60%;
+        margin: auto;
+    }
+
+    h3 {
+        width: 60%;
+        margin: auto;
     }
 
     /* Pbulication list */
@@ -368,20 +408,36 @@ footer {
 
     /* About me */
     .aboutMe {
-        width: 70%;
+        width: 90%;
         margin: auto;
         text-align: left;
+    }
+
+    .aboutBox {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
     }
 
     .sideBar {
         width: max-content;
         height: 100%;
         margin: auto;
+        
     }
 
     .profilePhoto  {
-        width: 20%;
-        height: auto;
+        width: auto;
+        height: 20em;
+        margin: auto;
+    }
+
+    .publicationList {
+        text-align: center;
+        background-color: var(--color-theme1);
+        border-radius: 10px;
+        padding: .2em;
     }
 
 

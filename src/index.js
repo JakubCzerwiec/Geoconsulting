@@ -31,6 +31,7 @@ const burger = document.querySelector('.burger');
 const menu = document.querySelector('.menu');
 const bBot = document.querySelector('.b-bot');
 const pubList = document.querySelector('.pubList');
+const coName = document.querySelector('.coName');
 
 burger.addEventListener('click', () => {
     menu.classList.toggle('hidden')
@@ -60,4 +61,8 @@ pubList.addEventListener('click', () => {
     bBot.classList.toggle('b-bot-click')
     menu.classList.toggle('hidden')
     publicationsRender();
+})
+
+coName.addEventListener('click', () => {
+    homeRender();
 })
