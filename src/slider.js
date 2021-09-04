@@ -1,113 +1,99 @@
-import { photos } from './photosImport';
+// Import photos
+    import { photos } from './photosImport';
+
+
+// Define render function
+    let sliderRender = () => {
+
+        // Structure and handlers
+            let sliderBox = document.createElement('div');
+            sliderBox.className = 'sliderBox';
+            let displayer = document.createElement('div');
+            displayer.className = 'displayer';
+            let slider = document.createElement('div');
+            const backBtn = document.createElement('div');
+            const forBtn = document.createElement('div');
+            let circles = document.createElement('div');
+            const main = document.querySelector('main')
+
+            main.append(sliderBox)
+
+        // Counter for photos
+            let counter = 0;
+
+        // Slider itself
+            let render = () => {
+                // Define DOM elements
+                    // Slider 
+                        slider.className = 'slider';
+                        slider.innerHTML = '';
+                        circles.innerHTML = '';
+                        slider.appendChild(photos[counter]);
+                    
+                    // Back and For buttons
+                        backBtn.className = 'back btn';
+                        backBtn.innerText = '<';
+
+                        forBtn.className = 'fro btn';
+                        forBtn.innerText = '>';
+
+                    // Navigation circles
+                        circles.className = 'circles';
+                        circles.innerHTML = '';
+
+                    // Creating circles
+                        for (let i = 0; i < photos.length; i++) {
+                            let circle = document.createElement('div');
+                            circle.className = 'circle';
+                            circles.appendChild(circle);
+                        }
 
 
 
-/* Set up first photo number */
+                    // Event listeners for nav circles
+                        let navCircles = document.querySelectorAll('.circle');
+                        navCircles.forEach((element, index) => {
+                            element.addEventListener('click', () => {
+                                counter = index;
+                                render ();
+                            })
+                        });
 
-// photos();
+                    // Changing class for active circle
+                        circles.childNodes[counter].className = 'circAct';
 
-/* Define render function */
-function sliderRender() {
-
-
-    let sliderBox = document.createElement('div');
-    sliderBox.className = 'sliderBox';
-    let displayer = document.createElement('div');
-    displayer.className = 'displayer';
-    let slider = document.createElement('div');
-    const backBtn = document.createElement('div');
-    const forBtn = document.createElement('div');
-    let circles = document.createElement('div');
-    const main = document.querySelector('main')
-
-    main.append(sliderBox)
-
-    let counter = 0;
-
-    let render = () => {
-        // Define DOM elements
-            // Slider 
-            
-            slider.className = 'slider';
-            slider.innerHTML = '';
-            circles.innerHTML = '';
-            slider.appendChild(photos[counter]);
-            
-
-            // Back and For buttons
-            
-            backBtn.className = 'back btn';
-            backBtn.innerText = '<';
-
-            forBtn.className = 'fro btn';
-            forBtn.innerText = '>';
-
-            // Navigation circles
-            
-            circles.className = 'circles';
-            circles.innerHTML = '';
-
-            // Creating circles
-            for (let i = 0; i < photos.length; i++) {
-                let circle = document.createElement('div');
-                circle.className = 'circle';
-                circles.appendChild(circle);
             }
 
+            render ();
 
-
-            // Event listeners for nav circles
-                let navCircles = document.querySelectorAll('.circle');
-                navCircles.forEach((element, index) => {
-                    element.addEventListener('click', () => {
-                        counter = index;
-                        render ();
-                    })
-                });
-
-            // Changing class for active circle
-            circles.childNodes[counter].className = 'circAct';
-
-    }
-
-        render ();
-            displayer.append(backBtn, slider, forBtn)
-            sliderBox.append(displayer, circles);
-
-
+                displayer.append(backBtn, slider, forBtn)
+                sliderBox.append(displayer, circles);
 
 
                         // Event listeners for Back nad For Btns
-                        backBtn.addEventListener('click', () => {
-                            counter--;
-                            if (counter < 0) counter = photos.length - 1;
-                            render();
-                        })
-            
-                        forBtn.addEventListener('click', () => {
-                            counter++;
-                            if (counter > photos.length -1) counter = 0;
-                            render();
-                        })
-            
-                        
+                            backBtn.addEventListener('click', () => {
+                                counter--;
+                                if (counter < 0) counter = photos.length - 1;
+                                render();
+                            })
+                
+                            forBtn.addEventListener('click', () => {
+                                counter++;
+                                if (counter > photos.length -1) counter = 0;
+                                render();
+                            })
+                
+                            
+            // Setting time interval for photos change
 
+                const nextSliderTimer = () => {
+                    counter++;
+                    if (counter >= photos.length) counter = 0;
+                    render();
+                }
 
+                const interval = setInterval(nextSliderTimer, 8000)
+    }
 
-                        // Setting time interval for photos change
-
-                        const nextSliderTimer = () => {
-                            counter++;
-                            if (counter >= photos.length) counter = 0;
-                            render();
-                        }
-
-                        const interval = setInterval(nextSliderTimer, 8000)
-}
-
-
-
-
-
-
-export {sliderRender}
+// Export
+    export {sliderRender}

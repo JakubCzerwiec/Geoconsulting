@@ -1,64 +1,57 @@
-/* Defining render function for nav-bar */
-// import { renderStructure } from './structure'
+// Import Logo image
+    import coLogo from './img/logo.png';
 
-import coLogo from './img/logo.png';
+    const logo = new Image();
+    logo.src = coLogo;
 
-const logo = new Image();
-logo.src = coLogo;
+// Navigation render function
+    let navRender = () => {
+        const navig = document.querySelector('navig');
 
-let navRender = () => {
-    const navig = document.querySelector('navig');
+        // Co-name
+            const coName = document.createElement('div');
+            coName.className = 'coName';
 
+                const coNameTop = document.createElement('div');
+                coNameTop.className = 'coNameTop';
+                coNameTop.innerHTML = 'Michał Matysik Geoconsulting';
 
+                const coNameSub = document.createElement('div');
+                coNameSub.className = 'coNameSub';
+                coNameSub.innerHTML = `Reservoir sedimentology`;
 
+                const coNameBox = document.createElement('div');
+                coNameBox.className = 'coNameBox';
 
-    // Co-name
-    const coName = document.createElement('div');
-    coName.className = 'coName';
+            coNameBox.append(coNameTop, coNameSub)
 
-    const coNameTop = document.createElement('div');
-    coNameTop.className = 'coNameTop';
-    coNameTop.innerHTML = 'Michał Matysik Geoconsulting';
-
-    const coNameSub = document.createElement('div');
-    coNameSub.className = 'coNameSub';
-    coNameSub.innerHTML = `Reservoir sedimentology`;
-
-    const coNameBox = document.createElement('div');
-    coNameBox.className = 'coNameBox';
-    coNameBox.append(coNameTop, coNameSub)
-
-    coName.append(logo, coNameBox);
+            coName.append(logo, coNameBox);
 
 
-    
+        // Nav buttons and menu div
+            const menu = document.createElement('div');
+            menu.className = 'hidden menu';
 
-                                // Nav buttons and menu div
-                                const menu = document.createElement('div');
-                                menu.className = 'hidden menu';
+                const li1 = document.createElement('div');
+                li1.className = 'nav home';
+                li1.textContent = 'Home';
 
-                                    const li1 = document.createElement('div');
-                                    li1.className = 'nav home';
-                                    li1.textContent = 'Home';
-                                    menu.appendChild(li1);
+                const li2 = document.createElement('div');
+                li2.className = 'nav services';
+                li2.textContent = 'Services';
 
-                                    const li2 = document.createElement('div');
-                                    li2.className = 'nav services';
-                                    li2.textContent = 'Services';
-                                    menu.appendChild(li2);
+                const li3 = document.createElement('div');
+                li3.className = 'nav about';
+                li3.textContent = 'About Me';
 
-                                    const li3 = document.createElement('div');
-                                    li3.className = 'nav about';
-                                    li3.textContent = 'About Me';
-                                    menu.appendChild(li3);
+                const li4 = document.createElement('div');
+                li4.className = 'nav pubList';
+                li4.textContent = 'Publication list';
 
-                                    const li4 = document.createElement('div');
-                                    li4.className = 'nav pubList';
-                                    li4.textContent = 'Publication list';
-                                    menu.appendChild(li4);
+            menu.append(li1, li2, li3, li4);
 
 
-                        // Creating burger 
+                    // Creating burger 
                         const burger = document.createElement('div');
                         burger.className = 'burger';
         
@@ -70,16 +63,11 @@ let navRender = () => {
                         burger.appendChild(burgerTop);
                         burger.appendChild(burgerBot);
 
-    // Appending all to the navigation
+        // Appending all to the navigation
+            navig.append(coName, menu, burger);
+
+    }
 
 
-
-    navig.append(coName, menu, burger);
-
-}
-
-
-/* Export render function */
-export {
-    navRender
-}
+// Export render function
+    export { navRender }

@@ -1,68 +1,65 @@
-/* Import render functions */
-import { renderStructure  } from './structure';
-import {homeRender} from './home';
-import {servicesRender} from './services';
-import {aboutRender} from './about';
-import {publicationsRender} from './publications';
-import { photosI } from './photosImport';
+// Import render functions
+    import { renderStructure  } from './structure';
+    import { homeRender } from './home';
+    import { servicesRender } from './services';
+    import { aboutRender } from './about';
+    import { publicationsRender } from './publications';
+    import { photosI } from './photosImport';
 
-/* Import stylesheet */
-import './style.css';
+// Import stylesheet
+    import './style.css';
 
-// import { LibManifestPlugin } from 'webpack';
-window['photosI'] = photosI;
-
-
-/* Initialazing homepage with Nav-bar */
-renderStructure ();
+// Set up photosI as a global variable
+    window['photosI'] = photosI;
 
 
+// Initialazing homepage with Nav-bar
 
+    renderStructure ();
 
+//Event listeners
+    // Handlers
+        const homeBtn = document.querySelector('.home');
+        const servicesBtn = document.querySelector('.services');
+        const aboutBtn = document.querySelector('.about');
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu');
+        const bBot = document.querySelector('.b-bot');
+        const pubList = document.querySelector('.pubList');
+        const coName = document.querySelector('.coName');
 
+    // Burger
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('hidden')
+            bBot.classList.toggle('b-bot-click')
+        } )
 
+    // Navigation buttons
+    
+        homeBtn.addEventListener('click', () => {
+            bBot.classList.toggle('b-bot-click')
+            menu.classList.toggle('hidden')
+            homeRender();
+        });
 
-/* Event listeners */
+        servicesBtn.addEventListener('click', () => {
+            bBot.classList.toggle('b-bot-click')
+            menu.classList.toggle('hidden')
+            servicesRender ();
+        });
 
-const homeBtn = document.querySelector('.home');
-const servicesBtn = document.querySelector('.services');
-const aboutBtn = document.querySelector('.about');
-const burger = document.querySelector('.burger');
-const menu = document.querySelector('.menu');
-const bBot = document.querySelector('.b-bot');
-const pubList = document.querySelector('.pubList');
-const coName = document.querySelector('.coName');
+        aboutBtn.addEventListener('click', () => {
+            bBot.classList.toggle('b-bot-click')
+            menu.classList.toggle('hidden')
+            aboutRender ();
+        });
 
-burger.addEventListener('click', () => {
-    menu.classList.toggle('hidden')
-    bBot.classList.toggle('b-bot-click')
-} )
+        pubList.addEventListener('click', () => {
+            bBot.classList.toggle('b-bot-click')
+            menu.classList.toggle('hidden')
+            publicationsRender();
+        })
 
-
-homeBtn.addEventListener('click', () => {
-    bBot.classList.toggle('b-bot-click')
-    menu.classList.toggle('hidden')
-    homeRender();
-});
-
-servicesBtn.addEventListener('click', () => {
-    bBot.classList.toggle('b-bot-click')
-    menu.classList.toggle('hidden')
-    servicesRender ();
-});
-
-aboutBtn.addEventListener('click', () => {
-    bBot.classList.toggle('b-bot-click')
-    menu.classList.toggle('hidden')
-    aboutRender ();
-});
-
-pubList.addEventListener('click', () => {
-    bBot.classList.toggle('b-bot-click')
-    menu.classList.toggle('hidden')
-    publicationsRender();
-})
-
-coName.addEventListener('click', () => {
-    homeRender();
-})
+        coName.addEventListener('click', () => {
+            homeRender();
+        })

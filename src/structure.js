@@ -1,28 +1,25 @@
 // Set up base structure of the page
-import {navRender} from './nav';
-import {homeRender} from './home';
-import { footerRender } from './footer';
+// Import rendering functions
+    import { navRender } from './nav';
+    import { homeRender } from './home';
+    import { footerRender } from './footer';
 
+// Render structure 
+        let renderStructure = () => {
+            // Main DOM elements
+                const content = document.getElementById('content');
+                    const navig = document.createElement('navig')
+                    const main = document.createElement('main')
+                    const footer = document.createElement('footer')
 
-let renderStructure = () => {
+            // Appending
+                content.append(navig, main, footer);
 
-    const content = document.getElementById('content');
+            // Rendering
+                navRender()
+                homeRender()
+                footerRender()
+        }
 
-        const navig = document.createElement('navig')
-           
-        const main = document.createElement('main')
-
-        const footer = document.createElement('footer')
-
-    content.append(navig, main, footer);
-
-    navRender()
-
-    homeRender()
-
-    footerRender()
-
-
-}
-
-export { renderStructure };
+// Export
+    export { renderStructure };
