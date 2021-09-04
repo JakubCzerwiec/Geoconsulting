@@ -11,6 +11,7 @@
     --color-font: black;
     --color-theme1: rgb(199, 199, 199);
     --color-theme2: rgb(240, 240, 240);
+    --color-dark: rgb(50, 50, 50);
    
 }
 
@@ -40,7 +41,7 @@ body {
     top: 0;
     width: 100vw;
     height: 100vh;
-    background-color: var(--color-theme1);
+    background-color: var(--color-dark);
     transition: transform 200ms cubic-bezier(.5, 0, .5, 1);
 }
 
@@ -48,7 +49,7 @@ navig {
     width: 100%;
     height: min-content;
     padding: .5em;
-    background-color: var(--color-theme1);
+    background-color: var(--color-dark);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -73,18 +74,28 @@ nav {
     font-size: 2em;
     margin: auto;
     font-weight: bold;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     text-align: center;
+    color: var(--color-wht);
 }
 
 .coName {
     font-size: 1.2em;
     padding: .5em;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     font-weight: bold;
     cursor: pointer;
+    color: var(--color-wht);
+}
+
+.coNameTop {
+    width: 60%;
+}
+
+.coNameSub {
+    display: none;
 }
 
 .coName img {
@@ -101,14 +112,14 @@ nav {
   } 
 
 .b-top {
-    background-color: var(--color-blk);
+    background-color: var(--color-wht);
     width: 3em;
     height: 3px;
     margin-bottom: .5em;
 }
 
 .b-bot {
-    background-color: var(--color-blk);
+    background-color: var(--color-wht);
     width: 1.5em;
     height: 3px;
     margin-left: auto;
@@ -199,7 +210,7 @@ nav {
     height: 1em;
     margin: .2em .2em;
     border-radius: 50%;
-    border: .1em solid var(--color-theme1);
+    border: .2em solid var(--color-theme1);
     background-color: var(--color-theme2);
 }
 
@@ -320,6 +331,8 @@ footer {
     margin: auto;
 }
 
+
+
 /* <-- Desctop version --> */
 
 @media screen and (min-width: 600px) {
@@ -359,7 +372,17 @@ footer {
 
     h2 {
         width: 100%;
+    }
 
+    .coNameTop {
+        width: max-content;
+    }
+
+
+    .coNameSub {
+        font-style: italic;
+        font-weight: normal;
+        display: block;
     }
 
     /* Main */

@@ -15,8 +15,20 @@ let navRender = () => {
     // Co-name
     const coName = document.createElement('div');
     coName.className = 'coName';
-    coName.innerHTML = `<p>Michał Matysik<br>Geoconsulting</p></div>`;
-    coName.append(logo);
+
+    const coNameTop = document.createElement('div');
+    coNameTop.className = 'coNameTop';
+    coNameTop.innerHTML = 'Michał Matysik Geoconsulting';
+
+    const coNameSub = document.createElement('div');
+    coNameSub.className = 'coNameSub';
+    coNameSub.innerHTML = `Reservoir sedimentology`;
+
+    const coNameBox = document.createElement('div');
+    coNameBox.className = 'coNameBox';
+    coNameBox.append(coNameTop, coNameSub)
+
+    coName.append(logo, coNameBox);
 
 
     
