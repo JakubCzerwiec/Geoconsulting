@@ -1,5 +1,5 @@
 // Import footer
-    import { footerRender } from './footer';
+import { footerRender } from './footer';
 
 // Define render function
     let publicationsRender = () => {
@@ -73,11 +73,10 @@
 
 // Function to add classes to li
     let addClassNameForPubsLi = () => {
-        const listItemsAll = document.getElementsByTagName('li');
-
-            for (let i = 0; i < listItemsAll.length; i++) {
-                listItemsAll[i].classList.add('pubsLi');
-            }
+        const listItemsAll = document.querySelectorAll('li');
+        listItemsAll.forEach((x) => {
+            x.classList.add('pubsLi')
+        })
     }
 
 // Export
