@@ -41,7 +41,7 @@
 
                 const service1list = document.createElement('ul');
                 const list1item1 = document.createElement('li');
-                list1item1.innerText = 'describing and interpreting depositional macro- and microfacies, key surfaces,';
+                list1item1.innerText = 'describing and interpreting depositional macro- and microfacies,';
                 const list1item2 = document.createElement('li');
                 list1item2.innerText = 'recognizing high-frequency sedimentary cycles, sequence stratigraphic units, and key surfaces,';
                 const list1item3 = document.createElement('li');

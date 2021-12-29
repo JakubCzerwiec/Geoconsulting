@@ -92,12 +92,17 @@
     }
 
     .coNameTop {
-        width: 60%;
+        width: 80%;
+        
     }
 
     .coNameSub {
-        display: none;
-    }
+        /* display: none; */
+        font-style: italic;
+        font-size: 0.7em;
+        font-weight: normal;
+        padding-top: .3em;
+    } 
 
     .coName img {
         height: 4em;
@@ -233,7 +238,7 @@
 /* Footer */
 
     footer {
-        background-color: beige;
+        background-color: rgb(250, 219, 195);
         padding: 1.5em;
         margin-top: 3em;
     }
@@ -287,9 +292,11 @@
         padding: 1em;
         width: 80%;
         margin: auto;
-        text-align: justify;
-        text-indent: 10%;
+        text-align: center;
+        
     }
+
+
 
     .sideBar {
         width: 80%;
@@ -322,8 +329,12 @@
         text-align: center;
         width: 80%;
         margin: auto;
+        margin-top: 1.2em;
     }
 
+    footer p {
+        font-size: .8rem;
+     }
 
 
 /* <---- Desctop version ----> */
@@ -370,6 +381,7 @@
 
         h2 {
             width: 100%;
+            text-align: center;
         }
 
         .coNameTop {
@@ -380,13 +392,16 @@
             font-style: italic;
             font-weight: normal;
             display: block;
+            font-size: 0.9em;
         }
 
     /* Main */
         .homeText {
             width: 60%;
-            margin-top: -4em;
+            margin-top: 1.5em;
         }
+
+
 
     /* Slider */
         .sliderBox {
@@ -445,6 +460,7 @@
             width: 90%;
             margin: auto;
             text-align: left;
+            text-align: center;
         }
 
         .aboutBox {
@@ -478,6 +494,9 @@
     /* Footer */
         footer {
             margin-top: 0;
+            
         }
+
+
     }
 

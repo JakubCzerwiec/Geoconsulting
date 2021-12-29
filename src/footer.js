@@ -24,8 +24,13 @@
                 mobile.className = 'mobile';
                 mobile.innerHTML = `<p><strong>Mobile:</strong> <a href='tel:+48882483147'>(+48) 882 483 147</a></p>`;
 
+            // NIP
+                const nip = document.createElement('div');
+                nip.className = 'nip';
+                nip.innerHTML = `<p><strong>NIP (taxpayer identification number):</strong> 6782962896</p>`;
+
         // Appending        
-        footer.append(adress, email, mobile)
+        footer.append(adress, nip, email, mobile)
     }
 
     export { footerRender };
