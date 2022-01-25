@@ -497,6 +497,11 @@
             
         }
 
+        .pubBtn {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
 
     }
 
