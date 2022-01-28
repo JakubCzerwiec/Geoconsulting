@@ -28,7 +28,9 @@
                         slider.className = 'slider';
                         slider.innerHTML = '';
                         circles.innerHTML = '';
-                        slider.appendChild(photos[counter]);
+                      //  slider.style.backgroundImage = `url(photos${counter})`;
+                         slider.appendChild(photos[counter]);
+                        // container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
                     
                     // Back and For buttons
                         backBtn.className = 'back btn';
