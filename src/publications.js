@@ -16,6 +16,7 @@ import { footerRender } from './footer';
         // Header 
             const header = document.createElement('h2');
             header.innerText = 'Publication list';
+            
 
         // List of publications
                 const publicationsList = document.createElement('ul');
@@ -27,16 +28,16 @@ import { footerRender } from './footer';
                     pub2.innerHTML = 'Stachacz, M., Knaust, D. & <strong>Matysik, M.</strong> (2021) Middle Triassic bivalve traces from central Europe (Muschelkalk, Anisian): overlooked burrows of a common ichnofabric. PalZ. See: <a href="https://link.springer.com/content/pdf/10.1007/s12542-021-00583-6.pdf" target="blank">[click]</a>';
 
                     const pub3 = document.createElement('li');
-                    pub3.innerHTML = '<strong>Matysik, M.</strong>, Stemmerik, L., Olaussen, S., Rameil, N., Gianotten, I. P. & Brunstad, H. (in review) Cherts, spiculites, and collapse breccias Porosity generation in upper Permian reservoir rocks, Gohta discovery, Loppa High, south-western Barents Sea. <i>Marine and Petroleum Geology</i>, 128: 105043. See: <a href="https://www.sciencedirect.com/science/article/abs/pii/S026481722100146X" target="blank">[click]</a>';
+                    pub3.innerHTML = '<strong>Matysik, M.</strong>, Stemmerik, L., Olaussen, S., Rameil, N., Gianotten, I. P. & Brunstad, H. (2021) Cherts, spiculites, and collapse breccias Porosity generation in upper Permian reservoir rocks, Gohta discovery, Loppa High, south-western Barents Sea. <i>Marine and Petroleum Geology</i>, 128: 105043. See: <a href="https://www.sciencedirect.com/science/article/abs/pii/S026481722100146X" target="blank">[click]</a>';
 
                     const pub4 = document.createElement('li');
-                    pub4.innerHTML = 'Bucur, I. I. & <strong>Matysik, M.</strong> (accepted) Dasycladalean green algae and associated foraminifers in Middle Triassic (Lower and Middle Muschelkalk) carbonates of the south-eastern Germanic Basin (Upper Silesia, Poland). <i>Annales Societatis Geologorum Poloniae</i>, 90: 391-407. See: <a href="http://www.asgp.pl/sites/default/files/volumes/90_4_391_407_Bucur_Matysik.pdf" target="blank">[click]</a>';
+                    pub4.innerHTML = 'Bucur, I. I. & <strong>Matysik, M.</strong> (2020) Dasycladalean green algae and associated foraminifers in Middle Triassic (Lower and Middle Muschelkalk) carbonates of the south-eastern Germanic Basin (Upper Silesia, Poland). <i>Annales Societatis Geologorum Poloniae</i>, 90: 391-407. See: <a href="http://www.asgp.pl/sites/default/files/volumes/90_4_391_407_Bucur_Matysik.pdf" target="blank">[click]</a>';
 
                     const pub5 = document.createElement('li');
-                    pub5.innerHTML = 'Antczak, M., Ruciński, M. R., Stachacz, M., <strong>Matysik, M.</strong> & Król, J. J. (in press) Diversity of vertebrate remains from the Lower Gogolin Beds (Anisian) of southern Poland. <i>Annales Societatis Geologorum Poloniae.</i> Free full text available at: <a href="http://www.asgp.pl/sites/default/files/volumes/90_4_419_433_Antczak_et_al.pdfMo" target="blank">[click]</a>;'
+                    pub5.innerHTML = 'Antczak, M., Ruciński, M. R., Stachacz, M., <strong>Matysik, M.</strong> & Król, J. J. (2020) Diversity of vertebrate remains from the Lower Gogolin Beds (Anisian) of southern Poland. <i>Annales Societatis Geologorum Poloniae.</i> Free full text available at: <a href="http://www.asgp.pl/sites/default/files/volumes/90_4_419_433_Antczak_et_al.pdfMo" target="blank">[click]</a>;'
 
                     const pub6 = document.createElement('li');
-                    pub5.innerHTML = 'Stachacz, M. & <strong>Matysik, M.</strong> (2020) Early Middle Triassic (Anisian) trace fossils, ichnofabrics, and substrate types from the southeastern Germanic Basin (Wellenkalk facies) of Upper Silesia, southern Poland: implications for biotic recovery following the Permian/Triassic mass extinction. <i>Global and Planetary Change</i>, 194: 103290. See: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921818120301818?dgcid=rss_sd_all" target="blank">[click]</a>';
+                    pub6.innerHTML = 'Stachacz, M. & <strong>Matysik, M.</strong> (2020) Early Middle Triassic (Anisian) trace fossils, ichnofabrics, and substrate types from the southeastern Germanic Basin (Wellenkalk facies) of Upper Silesia, southern Poland: implications for biotic recovery following the Permian/Triassic mass extinction. <i>Global and Planetary Change</i>, 194: 103290. See: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0921818120301818?dgcid=rss_sd_all" target="blank">[click]</a>';
 
                     const pub7 = document.createElement('li');
                     pub7.innerHTML = '<strong>Matysik, M.</strong> & Szulc, J. (2019) Shallow-marine carbonate sedimentation in a tectonically mobile basin, the Muschelkalk (Middle Triassic) of Upper Silesia (southern Poland). <i>Marine and Petroleum Geology</i>, 107: 99–115.  See: <a href="https://www.sciencedirect.com/science/article/abs/pii/S0264817219302211" target="blank">[click]</a>';
