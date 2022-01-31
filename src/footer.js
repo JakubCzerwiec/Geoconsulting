@@ -27,7 +27,7 @@
             // NIP
                 const nip = document.createElement('div');
                 nip.className = 'nip';
-                nip.innerHTML = `<p><strong>NIP (taxpayer identification number):</strong> 6782962896</p>`;
+                nip.innerHTML = `<p><strong>NIP (taxpayer identification no.):</strong> 6782962896</p>`;
 
         // Appending        
         footer.append(adress, nip, email, mobile)
