@@ -153,6 +153,7 @@
         margin: auto;
         justify-content: center;
     }
+
     .slider {
         width: 100%;
         height: auto;
@@ -160,11 +161,12 @@
         justify-content: center;
         padding: .5em;
         flex-direction: column;
+        align-items: center;
     }
 
     .picDescriptionDiv {
         display: none;
-    }
+    } 
 
 
 /* Keframes for pictures changing */    
@@ -434,12 +436,13 @@
         }
 
         .picDescriptionDiv {
+            display: block;
             position: absolute;
             width: 30vw;
             background-color: white;
             font-size: .7em;
             margin-top: 45vh;
-            opacity: .7;
+            opacity: .6;
             padding: .4em;
             border-radius: 5px;
             text-align: center;
