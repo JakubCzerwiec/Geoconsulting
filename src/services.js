@@ -100,7 +100,7 @@
 
     // Appending slider
 
-        photos = photosI.slice(10, 20)
+        photos = photosI.slice(14, 27)
         sliderRender();
 
 

@@ -34,7 +34,7 @@
         // Appending        
             main.appendChild(text);
 
-            photos = photosI.slice(0, 10)
+            photos = photosI.slice(0, 14)
             sliderRender();
 
 
