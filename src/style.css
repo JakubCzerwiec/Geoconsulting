@@ -438,9 +438,10 @@
         .picDescriptionDiv {
             display: block;
             position: absolute;
-            width: 30vw;
+            width: 25%;
             background-color: white;
-            font-size: .7em;
+            font-size: .6em;
+            font-weight: bold;
             margin-top: 45vh;
             opacity: .6;
             padding: .4em;
