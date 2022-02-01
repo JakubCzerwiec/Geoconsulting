@@ -1,5 +1,7 @@
 // Import photos
     import { photos } from './photosImport';
+    import { picDescription } from './descriptionsForPics';
+ 
 
 
 // Define render function
@@ -11,6 +13,7 @@
             let displayer = document.createElement('div');
             displayer.className = 'displayer';
             let slider = document.createElement('div');
+            let picDescriptionDiv = document.createElement('div');
             const backBtn = document.createElement('div');
             const forBtn = document.createElement('div');
             let circles = document.createElement('div');
@@ -27,10 +30,14 @@
                     // Slider 
                         slider.className = 'slider';
                         slider.innerHTML = '';
+
+                        picDescriptionDiv.className = 'picDescriptionDiv';
+                        picDescriptionDiv.innerHTML = `${picDescription[counter]}`;
+
                         circles.innerHTML = '';
-                      //  slider.style.backgroundImage = `url(photos${counter})`;
-                         slider.appendChild(photos[counter]);
-                        // container.style.backgroundImage = `url(img/bcg-${counter}.jpg)`;
+                    
+                         slider.append(photos[counter], picDescriptionDiv);
+                    
                     
                     // Back and For buttons
                         backBtn.className = 'back btn';

@@ -2,6 +2,7 @@
     import { sliderRender } from './slider';
     import { footerRender } from './footer';
     import { photos } from './photosImport';
+    import { picDescription } from './descriptionsForPics';
 
 
 
@@ -100,7 +101,8 @@
 
     // Appending slider
 
-        photos = photosI.slice(14, 27)
+        picDescription = picDescriptions.slice(14, 27);
+        photos = photosI.slice(14, 27);
         sliderRender();
 
 

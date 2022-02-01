@@ -5,12 +5,14 @@
     import { aboutRender } from './about';
     import { publicationsRender } from './publications';
     import { photosI } from './photosImport';
+    import { picDescriptions } from './descriptionsForPics';
 
 // Import stylesheet
     import './style.css';
 
 // Set up photosI as a global variable
     window['photosI'] = photosI;
+    window['picDescriptions'] = picDescriptions;
 
 
 // Initialazing homepage with Nav-bar

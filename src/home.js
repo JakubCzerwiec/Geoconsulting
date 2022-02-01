@@ -3,6 +3,7 @@
 // Import Slider data
     import { photos } from './photosImport';
     import { sliderRender } from './slider';
+    import { picDescription } from './descriptionsForPics'; 
 
 
     // Defining render function for Main page
@@ -34,7 +35,8 @@
         // Appending        
             main.appendChild(text);
 
-            photos = photosI.slice(0, 14)
+            picDescription = picDescriptions.slice(0, 14);
+            photos = photosI.slice(0, 14);
             sliderRender();
 
 

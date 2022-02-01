@@ -159,6 +159,11 @@
         display: flex;
         justify-content: center;
         padding: .5em;
+        flex-direction: column;
+    }
+
+    .picDescriptionDiv {
+        display: none;
     }
 
 
@@ -237,7 +242,7 @@
 
     footer {
         background-color: rgb(250, 219, 195);
-        padding: 1.5em;
+        padding: 1.3em;
         margin-top: 2em;
     }
 
@@ -335,7 +340,7 @@
      }
 
 
-/* <---- Desctop version ----> */
+/* <------------------------- Desctop version -------------------------> */
 
     @media screen and (min-width: 600px) {
 
@@ -426,6 +431,18 @@
 
         .btn:hover {
             transform: scale(1.5);
+        }
+
+        .picDescriptionDiv {
+            position: absolute;
+            width: 30vw;
+            background-color: white;
+            font-size: .7em;
+            margin-top: 45vh;
+            opacity: .7;
+            padding: .4em;
+            border-radius: 5px;
+            text-align: center;
         }
 
     /* Services */
