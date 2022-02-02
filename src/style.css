@@ -81,7 +81,7 @@
     }
 
     .coName {
-        font-size: 1.2em;
+        font-size: 1.1em;
         padding: .5em;
         display: flex;
         flex-direction: row;
@@ -438,13 +438,13 @@
         .picDescriptionDiv {
             display: block;
             position: absolute;
-            width: 25%;
+            max-width: 25%;
             background-color: white;
-            font-size: .6em;
+            font-size: .7em;
             font-weight: bold;
             margin-top: 45vh;
             opacity: .6;
-            padding: .4em;
+            padding: .3em;
             border-radius: 5px;
             text-align: center;
         }
