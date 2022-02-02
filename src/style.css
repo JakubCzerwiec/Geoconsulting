@@ -235,7 +235,7 @@
 
     h2 {
         background-color: var(--color-theme2);
-        padding: .5em;
+        padding: .9em;
         height: 100%;
     }
 
@@ -381,7 +381,7 @@
             height: 100%;
             flex-grow: 2;
             align-items: center;
-
+            margin-top: 6.5em;
         }
 
         h2 {
