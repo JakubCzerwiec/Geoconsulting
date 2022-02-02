@@ -58,6 +58,11 @@
     const photo26 = new Image();
 
 
+
+
+
+
+
 // Assigning imported to variables
     photo0.src = photo_0;
     photo1.src = photo_1;
