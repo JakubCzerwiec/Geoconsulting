@@ -172,16 +172,16 @@
 /* Keframes for pictures changing */    
         @keyframes slide {
             0% {
-                opacity: .2;
+                opacity: .1;
             }
-            10% {
+            5% {
                 opacity: 1;
             }
-            90% {
+            95% {
                 opacity: 1;
             }
             100% {
-                opacity: .2;
+                opacity: .1;
             }
         }
 
@@ -442,7 +442,7 @@
             background-color: white;
             font-size: .7em;
             font-weight: bold;
-            margin-top: 45vh;
+            margin-top: 48vh;
             opacity: .6;
             padding: .3em;
             border-radius: 5px;
