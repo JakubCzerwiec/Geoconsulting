@@ -12,7 +12,7 @@
             // Company address
                 const adress = document.createElement('div');
                 adress.className = 'adress';
-                adress.innerHTML = '<p><strong>Address:</strong> Malachitowa 5/3, 30-798 Kraków, Poland</p>';
+                adress.innerHTML = '<p><strong>Address:</strong> Wysłouchów 42/40, 30-6 Kraków, Poland</p>';
 
             // Email
                 const email = document.createElement('div');
